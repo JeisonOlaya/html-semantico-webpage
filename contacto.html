@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <header class="header">
+        <h1>MotoStorm</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./BlogsMotos.html">Blogs</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./sobremi.html">Sobre mi</a></li>
+                <li><a href="./etiquetas.html">Etiquetas</a></li>
+                <li><a href="./galeria.html">Galerias</a></li>
+            </ul>  
+        </nav>
+    </header>
+
+    <section class="seccion">
+        <h2>Formulario de contacto</h2>
+        <p>Deseas cotizar alguna moto? tienes dudas o sugerencias?. Dejanos tus datos y pronto nos comunicaremos.</p>
+        <form action="" method="POST">
+            <fieldset class="fieldset">
+                <h4 class="tileDatos">Datos de contacto</h4>
+                <label for="nombre">Nombre completo*</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ejemplo: Jeison Olaya" required>       
+                <label for="correo">Correo electronico*<abbr title="Obligatorio"></abbr></label>                
+                <input type="email" id="correo" name="correo" placeholder="Ejemplo: ejemplo@gmail.com" required>                               
+                <label for="asunto">Asunto*</label>                
+                <input type="text" id="asunto" name="asunto" placeholder="Ejemplo: Cotizacion de moto" required>                                
+                <label for="mensaje">Mensaje</label>               
+                <textarea id="mensaje" name="mensaje" rows="10" cols="50" required></textarea>                
+                <small>Escribe los detalles de tu solicitud o sugerencia</small>                
+                <input class="btn-enviar" type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>@ 2025 MotoStorm. Todos los derechos reservados</p>
+        <p>Contacto: <a href="#">conacto@MotoStorm.com</a>"| Tel: 327 345 2345"</p>
+        <p>Siguenos: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#" >X</a></p>
+    </footer>
+    
+</body>
+</html>

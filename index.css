@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    position: relative;
+    min-height: 100vh;
+    font-family: Nunito;
+    display: flex;
+    flex-direction: column;
+}
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(img/fondo.png);
+    background-position: center;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+
+}
+.header{
+    background-color: gray;
+    width: 100%; /*aca definimos el hancho del header*/
+    text-align: center;/* Aca estamos centrando el titulo */
+    font-size: 20px; /*aca estamos dandole tamaño a la letra*/
+    padding: 5px; /*Aca le estamos dando margen al contenido que hay adentro*/
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+}       
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-content: center; /*Aca estamos centrnado el menu.*/
+    font-size: 20px; /*aca estamos dandole tamaño a la letra*/
+
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    text-shadow: 0px 10px 8px black;
+}
+
+.menu a:hover {
+    color:white;
+}
+.img_logo{
+    width: 250px; /*Aca le damos las dimenciones al logo*/
+    height: 250px; /*Aca le damos las dimenciones al logo*/    
+}
+.caja-introduccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.introduccion{
+    width: 600px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5%;
+    background-color: rgba(128, 128, 128, 0.352);
+}
+
+.footer {
+    background-color: gray;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    padding: 20px 0;
+}
+main {
+    margin-bottom: 0;
+    height: 100%;
+}
